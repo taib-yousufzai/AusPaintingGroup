@@ -160,3 +160,25 @@
     letter-spacing: -0.02em;
   }
 }
+
+/* ─── Scroll entrance animations ─────────────────────────────────────────── */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+  transition-delay: var(--stagger-delay, 0ms);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
