@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 
 const NAV_LINKS = ["services", "projects", "reviews", "faq", "contact"] as const;
@@ -13,8 +14,8 @@ export function MobileNav({ open, onOpenChange, activeSection }: MobileNavProps)
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent side="right" className="flex w-full max-w-xs flex-col gap-8 pt-8">
         {/* Logo */}
-        <a
-          href="#top"
+        <Link
+          to="/"
           className="flex items-center gap-2.5 text-lg tracking-tight"
           style={{ fontFamily: "var(--font-display)" }}
           onClick={() => onOpenChange(false)}
@@ -29,14 +30,14 @@ export function MobileNav({ open, onOpenChange, activeSection }: MobileNavProps)
           <span className="font-black uppercase tracking-[0.02em]">
             Aus Painting<span className="text-[color:var(--brand-gold)]"> Group</span>
           </span>
-        </a>
+        </Link>
 
         {/* Nav links */}
         <nav className="flex flex-col gap-4">
           {NAV_LINKS.map((section) => (
             <a
               key={section}
-              href={`#${section}`}
+              href={`/#${section}`}
               onClick={() => onOpenChange(false)}
               className={`text-base font-medium uppercase tracking-widest transition hover:text-[color:var(--brand-green)] ${
                 activeSection === section
@@ -51,10 +52,10 @@ export function MobileNav({ open, onOpenChange, activeSection }: MobileNavProps)
 
         {/* Call CTA */}
         <a
-          href="tel:PHONE_NUMBER"
+          href="tel:+61431632348"
           className="mt-auto rounded-full bg-[color:var(--brand-green)] px-5 py-3 text-center text-sm font-semibold text-[color:var(--brand-gold-soft)] shadow-[var(--shadow-gold)] transition hover:brightness-110"
         >
-          Call [PHONE_NUMBER]
+          Call 0431 632 348
         </a>
       </SheetContent>
     </Sheet>

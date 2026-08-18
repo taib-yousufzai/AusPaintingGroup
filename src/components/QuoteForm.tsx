@@ -69,7 +69,7 @@ export function QuoteForm() {
       });
       form.reset();
     } catch {
-      toast.error("Something went wrong. Please call [PHONE_NUMBER].", {
+      toast.error("Something went wrong. Please call 0431 632 348.", {
         duration: 6000,
       });
     }

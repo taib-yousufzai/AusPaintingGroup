@@ -16,6 +16,9 @@ dist-ssr
 .nitro
 *.local
 .kiro
+.agents
+.claude
+agent 
 
 # Wrangler / Cloudflare
 .wrangler/
