@@ -172,7 +172,7 @@ export function ProjectPage() {
             <section className="rounded-3xl bg-white p-6 text-center shadow-sm border border-[color:var(--brand-green)]/10 space-y-4">
               <h4 className="text-base font-extrabold font-display">Need a similar finish?</h4>
               <p className="text-xs text-[color:var(--muted-foreground)] leading-relaxed">
-                Get a transparent, fixed-price quote from owner Nick for your interior or exterior project.
+                Get a transparent, fixed-price quote from owner Adam for your interior or exterior project.
               </p>
               <Link
                 to="/#contact"

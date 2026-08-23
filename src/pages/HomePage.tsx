@@ -13,9 +13,9 @@ import { serviceDetails } from "@/data/services";
 import { Link } from "react-router-dom";
 
 const reviews = [
-  { name: "James R.", suburb: "City of Sydney", text: "Nick repainted our entire home — ceilings, walls, trims and front brick. Prep work was meticulous, colours came out exactly as we chose, and the crew left the place spotless every single day. Finished three days early." },
+  { name: "James R.", suburb: "City of Sydney", text: "Adam repainted our entire home — ceilings, walls, trims and front brick. Prep work was meticulous, colours came out exactly as we chose, and the crew left the place spotless every single day. Finished three days early." },
   { name: "Priya S.", suburb: "Vaucluse", text: "We needed a full exterior repaint before listing. Aus Painting Group turned it around in two weeks, beautifully. The home sold the following weekend." },
-  { name: "Daniel M.", suburb: "Marrickville", text: "Honest pricing, no surprises, and the finish on our heritage trims is the best we've ever had. Couldn't recommend Nick more." },
+  { name: "Daniel M.", suburb: "Marrickville", text: "Honest pricing, no surprises, and the finish on our heritage trims is the best we've ever had. Couldn't recommend Adam more." },
 ];
 
 const faqs = [
@@ -104,14 +104,14 @@ function Hero({ heroRef }: HeroProps) {
             <span className="text-[color:var(--brand-gold)]">Priced for the real world.</span>
           </h1>
           <p className="mt-5 max-w-xl text-base text-white/75 sm:text-lg">
-            A free, no-pressure quote with owner Nick — usually within 48 hours, anywhere across Sydney metro.
+            A free, no-pressure quote with owner Adam — usually within 48 hours, anywhere across Sydney metro. We guarantee to beat any written quote.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand-gold)] px-6 py-3 font-semibold text-[color:var(--brand-darker)] shadow-[var(--shadow-gold)] transition hover:brightness-105">
               Get a Free Quote →
             </a>
             <a href="tel:+61431632348" className="inline-flex items-center gap-2 rounded-full border border-[color:var(--brand-gold)]/40 px-6 py-3 font-semibold text-[color:var(--brand-gold-soft)] transition hover:bg-white/5">
-              Call Nick · 0431 632 348
+              Call Adam · 0431 632 348
             </a>
           </div>
         </div>
@@ -125,7 +125,7 @@ function Hero({ heroRef }: HeroProps) {
         </div>
 
         {[
-          { k: "12+", l: "Years painting Sydney" },
+          { k: "20+", l: "Years painting Sydney" },
           { k: "$20M", l: "Public liability cover" },
           { k: "48h", l: "Average quote turnaround" },
           { k: "5.0★", l: "Google verified average" },
@@ -356,7 +356,7 @@ function FAQ({ faqItemRefs }: FAQProps) {
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[color:var(--brand-gold)]">— FAQ</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Your painting questions, answered.</h2>
-          <p className="mt-4 text-[color:var(--muted-foreground)]">Can&apos;t find what you&apos;re after? Call Nick directly — happy to help.</p>
+          <p className="mt-4 text-[color:var(--muted-foreground)]">Can&apos;t find what you&apos;re after? Call Adam directly — happy to help.</p>
         </div>
         <div className="space-y-3">
           {faqs.map((f, i) => (
@@ -398,7 +398,7 @@ function CTA({ ctaRef }: CTAProps) {
           <div className="mb-10">
             <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[color:var(--brand-gold)]">— Free Painting Quote</p>
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-5xl">Let&apos;s talk about<br/>your project.</h2>
-            <p className="mt-4 max-w-xl text-white/75">Free on-site assessment with owner Nick, usually within 48 hours. No pressure — just an honest fixed price.</p>
+            <p className="mt-4 max-w-xl text-white/75">Free on-site assessment with owner Adam, usually within 48 hours. No pressure — just an honest fixed price. We beat any written quote!</p>
           </div>
           <div className="mb-8 rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
             <QuoteForm />

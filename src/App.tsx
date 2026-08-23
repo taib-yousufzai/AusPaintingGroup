@@ -15,6 +15,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[color:var(--brand-cream)] text-foreground">
+      {/* Announcement Bar / Price Guarantee */}
+      <div className="bg-[color:var(--brand-green)] text-[color:var(--brand-gold-soft)] py-2 text-center text-xs font-semibold tracking-wider px-4">
+        ★ Best Price Guarantee: We will beat any written painting quote! ★
+      </div>
       <MobileNav open={mobileOpen} onOpenChange={setMobileOpen} activeSection={activeSection} />
       <Header activeSection={activeSection} mobileOpen={mobileOpen} setMobileOpen={setMobileOpen} />
       

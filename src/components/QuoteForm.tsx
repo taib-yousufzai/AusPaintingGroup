@@ -64,7 +64,7 @@ export function QuoteForm() {
   async function onSubmit(_data: QuoteFormValues) {
     try {
       await new Promise((res) => setTimeout(res, 1500));
-      toast.success("Quote request sent! Nick will be in touch within 48 hours.", {
+      toast.success("Quote request sent! Adam will be in touch within 48 hours.", {
         duration: 5000,
       });
       form.reset();

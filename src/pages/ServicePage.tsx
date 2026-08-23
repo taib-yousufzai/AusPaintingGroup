@@ -194,7 +194,7 @@ export function ServicePage() {
             <section className="rounded-3xl bg-white p-6 text-center shadow-sm border border-[color:var(--brand-green)]/10 space-y-4">
               <h4 className="text-base font-extrabold font-display">Need a fixed quote?</h4>
               <p className="text-xs text-[color:var(--muted-foreground)] leading-relaxed">
-                Schedule a complimentary on-site appraisal with Nick. Detailed scope and flat pricing within 48 hours.
+                Schedule a complimentary on-site appraisal with Adam. Detailed scope and flat pricing within 48 hours.
               </p>
               <Link
                 to="/#contact"
