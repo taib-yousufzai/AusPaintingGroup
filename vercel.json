@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/b8860b2026indexnowkeyauspainting.txt", "destination": "/b8860b2026indexnowkeyauspainting.txt" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

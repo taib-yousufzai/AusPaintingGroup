@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { HomePage } from "@/pages/HomePage";
 import { ProjectPage } from "@/pages/ProjectPage";
 import { ServicePage } from "@/pages/ServicePage";
+import { SitemapPage } from "@/pages/SitemapPage";
 
 export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/" element={<HomePage onActiveSectionChange={setActiveSection} />} />
         <Route path="/project/:projectId" element={<ProjectPage />} />
         <Route path="/service/:serviceId" element={<ServicePage />} />
+        <Route path="/sitemap-html" element={<SitemapPage />} />
       </Routes>
 
       <Footer />
@@ -112,6 +114,7 @@ function Footer() {
             <li><a href="/#services" className="hover:text-white">Exterior Painting</a></li>
             <li><a href="/#services" className="hover:text-white">Heritage Restoration</a></li>
             <li><a href="/#services" className="hover:text-white">Commercial &amp; Strata</a></li>
+            <li><Link to="/sitemap-html" className="hover:text-white underline">HTML Sitemap Directory</Link></li>
           </ul>
         </div>
         <div>
@@ -123,8 +126,9 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-7xl px-4 text-xs text-white/40 sm:px-6 lg:px-8">
-        © {new Date().getFullYear()} Aus Painting Group. All rights reserved.
+      <div className="mx-auto mt-10 max-w-7xl px-4 text-xs text-white/40 flex justify-between items-center sm:px-6 lg:px-8">
+        <div>© {new Date().getFullYear()} Aus Painting Group. All rights reserved.</div>
+        <div><Link to="/sitemap-html" className="hover:text-white">Sitemap</Link></div>
       </div>
     </footer>
   );
